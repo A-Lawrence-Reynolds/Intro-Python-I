@@ -16,7 +16,7 @@ print("x is : %2i , y is %4.2f, z is %15s" % (x, y, z))
 
   
 # Use the 'format' string method to print the same thing
-# print("x is : {} , y is {:.2f}, z is {}".format(x, y, z)) with format 
+print("x is : {} , y is {:.2f}, z is {}".format(x, y, z)) 
 
 
 
