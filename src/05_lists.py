@@ -31,4 +31,5 @@ print(x)
 print(len(x))
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
-print(i * 1000 for i in x)
+mult_list = [e *1000 for e in x]
+print(mult_list)

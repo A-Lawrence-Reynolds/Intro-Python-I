@@ -10,7 +10,7 @@ for more info regarding list comprehensions.
 
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = [i for i in range(6)]
+y = [i+1 for i in range(5)]
 
 print (y)
 
@@ -36,6 +36,6 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-y = [i for i in x if i% 2 == 0]
+y = [i for i in range (len(x)) if i % 2 == 0]
 
 print(y)
