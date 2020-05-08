@@ -34,7 +34,11 @@ print(f2(sum(a)))    # Should print 22
 # it returns that value plus 1. If two arguments, it returns the sum of the
 # arguments.
 # Note: Google "python default arguments" for a hint.
-
+def f3(*values):
+    if len(values) ==2:
+        return values[0] + values[1]
+    elif len(values)==1:
+        return values[0] +1
 # YOUR CODE HERE
 
 print(f3(1, 2))  # Should print 3
@@ -49,6 +53,9 @@ print(f3(8))     # Should print 9
 #
 # Note: Google "python keyword arguments".
 
+def f4(**arg):
+    for key, value in arg.items():
+        print(f"key:{key}, value:{value}")
 # YOUR CODE HERE
 
 # Should print
@@ -68,4 +75,4 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+f4(**d)
